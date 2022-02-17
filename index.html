@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hiking</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/media.css">
+  <link rel="stylesheet" href="./fonts/gilroy/stylesheet.css">
+  <link rel="stylesheet" href="./fonts/chronicle/chronicledisplaybold.css">
+</head>
+
+<body>
+
+  <header class="header" id="header">
+    <nav class="navbar">
+      <div class="logo"> <a href="#header" aria-label="Logo">mntn</a> </div>
+      <div class="menu">
+        <ul class="menu__list">
+          <li class="menu__list-item link"><a data-scroll href="#Equipmenet">Equipment</a></li>
+          <li class="menu__list-item link"><a data-scroll href="#about-us">About us</a></li>
+          <li class="menu__list-item link"><a data-scroll href="#blog">Blog</a></li>
+        </ul>
+      </div>
+      <a href="#" class="account">
+        <svg class="account-svg" width="28" height="28" viewBox="0 0 28 28" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM7.07 18.28C7.5 17.38 10.12 16.5 12 16.5C13.88 16.5 16.51 17.38 16.93 18.28C15.57 19.36 13.86 20 12 20C10.14 20 8.43 19.36 7.07 18.28ZM18.36 16.83C16.93 15.09 13.46 14.5 12 14.5C10.54 14.5 7.07 15.09 5.64 16.83C4.62 15.49 4 13.82 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 13.82 19.38 15.49 18.36 16.83V16.83ZM12 6C10.06 6 8.5 7.56 8.5 9.5C8.5 11.44 10.06 13 12 13C13.94 13 15.5 11.44 15.5 9.5C15.5 7.56 13.94 6 12 6ZM12 11C11.17 11 10.5 10.33 10.5 9.5C10.5 8.67 11.17 8 12 8C12.83 8 13.5 8.67 13.5 9.5C13.5 10.33 12.83 11 12 11Z" />
+          <mask id="mask0_1_50" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="20" height="20">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM7.07 18.28C7.5 17.38 10.12 16.5 12 16.5C13.88 16.5 16.51 17.38 16.93 18.28C15.57 19.36 13.86 20 12 20C10.14 20 8.43 19.36 7.07 18.28ZM18.36 16.83C16.93 15.09 13.46 14.5 12 14.5C10.54 14.5 7.07 15.09 5.64 16.83C4.62 15.49 4 13.82 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 13.82 19.38 15.49 18.36 16.83V16.83ZM12 6C10.06 6 8.5 7.56 8.5 9.5C8.5 11.44 10.06 13 12 13C13.94 13 15.5 11.44 15.5 9.5C15.5 7.56 13.94 6 12 6ZM12 11C11.17 11 10.5 10.33 10.5 9.5C10.5 8.67 11.17 8 12 8C12.83 8 13.5 8.67 13.5 9.5C13.5 10.33 12.83 11 12 11Z" />
+          </mask>
+          <g mask="url(#mask0_1_50)">
+          </g>
+        </svg>
+        <span class="account__text">Account</span>
+      </a>
+
+      <button class="mobile-nav__btn" type="button" aria-controls="menu-container">
+        <span class="mobile-nav__span"></span>
+      </button>
+
+      <div class="mobile-nav">
+        <a href="#" class="account">
+          <svg class="account-svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM7.07 18.28C7.5 17.38 10.12 16.5 12 16.5C13.88 16.5 16.51 17.38 16.93 18.28C15.57 19.36 13.86 20 12 20C10.14 20 8.43 19.36 7.07 18.28ZM18.36 16.83C16.93 15.09 13.46 14.5 12 14.5C10.54 14.5 7.07 15.09 5.64 16.83C4.62 15.49 4 13.82 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 13.82 19.38 15.49 18.36 16.83V16.83ZM12 6C10.06 6 8.5 7.56 8.5 9.5C8.5 11.44 10.06 13 12 13C13.94 13 15.5 11.44 15.5 9.5C15.5 7.56 13.94 6 12 6ZM12 11C11.17 11 10.5 10.33 10.5 9.5C10.5 8.67 11.17 8 12 8C12.83 8 13.5 8.67 13.5 9.5C13.5 10.33 12.83 11 12 11Z" />
+            <mask id="mask0_1_50" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="20" height="20">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM7.07 18.28C7.5 17.38 10.12 16.5 12 16.5C13.88 16.5 16.51 17.38 16.93 18.28C15.57 19.36 13.86 20 12 20C10.14 20 8.43 19.36 7.07 18.28ZM18.36 16.83C16.93 15.09 13.46 14.5 12 14.5C10.54 14.5 7.07 15.09 5.64 16.83C4.62 15.49 4 13.82 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 13.82 19.38 15.49 18.36 16.83V16.83ZM12 6C10.06 6 8.5 7.56 8.5 9.5C8.5 11.44 10.06 13 12 13C13.94 13 15.5 11.44 15.5 9.5C15.5 7.56 13.94 6 12 6ZM12 11C11.17 11 10.5 10.33 10.5 9.5C10.5 8.67 11.17 8 12 8C12.83 8 13.5 8.67 13.5 9.5C13.5 10.33 12.83 11 12 11Z" />
+            </mask>
+            <g mask="url(#mask0_1_50)">
+            </g>
+          </svg>
+          <span class="account__text">Account</span>
+        </a>
+        <ul class="mobile-nav__list">
+          <li class="mobile-nav__link"><a data-scroll href="#Equipmenet">Equipment</a></li>
+          <li class="mobile-nav__link"><a data-scroll href="#about-us">About us</a></li>
+          <li class="mobile-nav__link"><a data-scroll href="#blog">Blog</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <a class="hero" href="#articles">
+      <span class="subtitle hero__subtitle">A Hiking guide</span>
+
+      <h1 class="hero__title">Be prepared for the Mountains and beyond!</h1>
+      <div class="scroll hero__scroll">
+        <span class="scroll__svg-text">scroll down</span>
+        <svg class="scroll__svg hero__svg" width="16" height="24" viewBox="0 0 16 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M16 16L14.59 14.59L9 20.17V0H7V20.17L1.42 14.58L0 16L8 24L16 16Z" />
+        </svg>
+      </div>
+    </a>
+
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <div class="content__list" id="articles">
+
+        <article class="content__article">
+          <div class="content__article-descr">
+            <span class="subtitle content__subtitle">Hiking Essentials</span>
+            <h2 class="content__title">Picking the right Hiking Gear!</h2>
+            <p class="content__descr">The nice thing about beginning hiking is&nbsp;that you don&rsquo;t really need
+              any special gear, you can probably get
+              away with things you already have. Let&rsquo;s start with clothing. A&nbsp;typical mistake hiking
+              beginners make
+              is&nbsp;wearing jeans and regular clothes, which will get heavy and chafe wif they get sweaty
+              or&nbsp;wet.</p>
+            <a class="scroll main__scroll">
+              <span class="scroll__svg-text">read more</span>
+              <svg class="scroll__svg main__scroll-svg" width="24" height="16" viewBox="0 0 24 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16 -6.99382e-07L14.59 1.41L20.17 7L-3.93402e-07 7L-3.0598e-07 9L20.17 9L14.58 14.58L16 16L24 8L16 -6.99382e-07Z" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="content__article-img">
+            <img src="./img/pictures/01.jpg" alt="man on top of the mountain">
+          </div>
+        </article>
+
+        <article class="content__article">
+          <div class="content__article-descr">
+            <span class="subtitle content__subtitle">Get Started</span>
+            <h2 class="content__title">What level of hiker are you?</h2>
+            <p class="content__descr">Determining what level of&nbsp;hiker you are can be&nbsp;an&nbsp;important tool
+              when
+              planning future hikes. This hiking
+              level guide will help you plan hikes according to&nbsp;different hike ratings set by&nbsp;various
+              websites
+              like All
+              Trails and Modern Hiker. What type of&nbsp;hiker are you&nbsp;&mdash; novice, moderate, advanced
+              moderate,
+              expert,
+              or&nbsp;expert backpacker?</p>
+            <a class="scroll main__scroll">
+              <span class="scroll__svg-text">read more</span>
+              <svg class="scroll__svg main__scroll-svg" width="24" height="16" viewBox="0 0 24 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16 -6.99382e-07L14.59 1.41L20.17 7L-3.93402e-07 7L-3.0598e-07 9L20.17 9L14.58 14.58L16 16L24 8L16 -6.99382e-07Z" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="content__article-img">
+            <img src="./img/pictures/02.jpg" alt="man on top of the mountain">
+          </div>
+        </article>
+
+        <article class="content__article">
+          <div class="content__article-descr">
+            <span class="subtitle content__subtitle">where you go is the key</span>
+            <h2 class="content__title">Understand Your Map &amp;&nbsp;Timing</h2>
+            <p class="content__descr">To&nbsp;start, print out the hiking guide and map. If&nbsp;it&rsquo;s raining,
+              throw them in&nbsp;a&nbsp;Zip-Lock bag.
+              Read over the guide, study the map, and have a&nbsp;good idea of&nbsp;what to&nbsp;expect. I&nbsp;like
+              to&nbsp;know what
+              my&nbsp;next landmark is&nbsp;as&nbsp;I&nbsp;hike. For example, I&rsquo;ll read the guide and know that
+              say,
+              in&nbsp;a&nbsp;mile, I&nbsp;make a&nbsp;right turn at&nbsp;the junction..</p>
+            <a class="scroll main__scroll">
+              <span class="scroll__svg-text">read more</span>
+              <svg class="scroll__svg main__scroll-svg" width="24" height="16" viewBox="0 0 24 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16 -6.99382e-07L14.59 1.41L20.17 7L-3.93402e-07 7L-3.0598e-07 9L20.17 9L14.58 14.58L16 16L24 8L16 -6.99382e-07Z" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="content__article-img">
+            <img src="./img/pictures/03.jpg" alt="man on the mountain">
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__left">
+      <div class="logo footer__logo"> <a href="#header" aria-label="Logo">mntn</a> </div>
+      <p class="footer__text">
+        Get out there &amp;&nbsp;discover your next slope, mountain &amp;&nbsp;destination!
+      </p>
+      <span class="copyright">
+        Copyright 2019&nbsp;MNTN, Inc. Terms &amp;&nbsp;Privacy
+      </span>
+    </div>
+
+    <div class="footer-nav">
+      <div class="footer__nav-content">
+        <h4 class="footer__title">More on The Blog</h4>
+        <ul class="footer__list">
+          <li class="footer__item"><a class="footer__link" data-scroll href="#">About MNTN</a></li>
+          <li class="footer__item"><a class="footer__link" data-scroll href="#">Contributors &amp;&nbsp;Writers</a></li>
+          <li class="footer__item"><a class="footer__link" data-scroll href="#">Write For Us</a></li>
+          <li class="footer__item"><a class="footer__link" data-scroll href="#">Contact Us</a></li>
+          <li class="footer__item"><a class="footer__link" data-scroll href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__lists-content">
+        <h4 class="footer__title">More on MNTN</h4>
+        <ul class="footer__list">
+          <li class="footer__item"><a class="footer__link" data-scroll href="#">The Team</a></li>
+          <li class="footer__item"><a class="footer__link" data-scroll href="#">Jobs</a></li>
+          <li class="footer__item"><a class="footer__link" data-scroll href="#">Press</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </footer>
+  <script src="./js/main.js" type="module"></script>
+</body>
+
+</html>

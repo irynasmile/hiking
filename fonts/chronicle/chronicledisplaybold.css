@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'ChronicleDisplayBold';
+    src: url('fonts/ChronicleDisplayBold.eot');
+    src: url('fonts/ChronicleDisplayBold.eot') format('embedded-opentype'),
+         url('fonts/ChronicleDisplayBold.woff2') format('woff2'),
+         url('fonts/ChronicleDisplayBold.woff') format('woff'),
+         url('fonts/ChronicleDisplayBold.ttf') format('truetype'),
+         url('fonts/ChronicleDisplayBold.svg#ChronicleDisplayBold') format('svg');
+}
